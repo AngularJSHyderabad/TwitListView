@@ -1,0 +1,10 @@
+<div>
+    <div class="row center-block" ng-repeat="twit in twits">
+        <div class="col-md-2 center-block"><img style="width:40px; height:40px"  class="img-rounded center-block" ng-src="{{twit.createUser.profilePictureUrl}}" />{{twit.createUser.fullName}}</div>
+        <div class="col-md-10">{{twit.message}}</div>
+        <div class="col-md-12">{{twit.createUser.fullName}}</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        
+    </div>
+</div>
