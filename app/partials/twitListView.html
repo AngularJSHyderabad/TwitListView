@@ -1,10 +1,29 @@
-<div>
-    <div class="row center-block" ng-repeat="twit in twits">
-        <div class="col-md-2 center-block"><img style="width:40px; height:40px"  class="img-rounded center-block" ng-src="{{twit.createUser.profilePictureUrl}}" />{{twit.createUser.fullName}}</div>
-        <div class="col-md-10">{{twit.message}}</div>
-        <div class="col-md-12">{{twit.createUser.fullName}}</div>
-        <div class="col-md-12">&nbsp;</div>
-        <div class="col-md-12">&nbsp;</div>
-        
-    </div>
+<div class="row ">
+    <table class="table table-hover">
+    	<tbody ng-repeat="twit in twits">
+    	<tr>
+    		
+        	<td class="text-center">
+        		<img style="width:100px; height:100px" ng-src="{{twit.createUser.profilePictureUrl}}" />
+        	</td>
+
+	        <td class="text-left">
+	        	<table class="table table-striped small">
+	        		<tr>
+	        			<td>{{twit.createUser.fullName}} - {{twit.createUser.id}}</td>
+	        			
+	        		</tr>
+	        		<tr>
+	        			<td>{{twit.createDate}}</td>
+	        			
+	        		</tr>
+	        		<tr>
+	        			<td>{{twit.message}}</td>
+	        			
+	        		</tr>
+	        	</table>	
+	        </td>
+        </tr>
+    </tbody>
+    </table>
 </div>

@@ -27,12 +27,12 @@ var app = angular.module("twitListView", ['ngRoute'])
             favorites: [{
                 fullName: 'Sachin Tendulkar',
                 id: '@sachinGod',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             },
             {
                 fullName: 'Christopher Nolan',
                 id: '@nolanBug',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             }]
 
         },
@@ -43,13 +43,13 @@ var app = angular.module("twitListView", ['ngRoute'])
             createUser: {
                 fullName: 'Sachin Tendulkar',
                 id: '@sachinGod',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             },
             message: 'Am I still a God?',
             favorites: [{
                 fullName: 'Rahul Dravid',
                 id: '@wallRahul',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             }]
 
         },
@@ -60,13 +60,13 @@ var app = angular.module("twitListView", ['ngRoute'])
             createUser: {
                 fullName: 'Sourav Ganguly',
                 id: '@theDadaSourav',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             },
             message: 'Yes, everywhere but Kolkatta',
             favorites: [{
                 fullName: 'Yuvraj Singh',
                 id: '@fighterYuvi',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             }]
 
         },
@@ -77,13 +77,13 @@ var app = angular.module("twitListView", ['ngRoute'])
             createUser: {
                 fullName: 'Heath Ledger',
                 id: '@jokerAlive',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             },
             message: 'Has anyone realized I\'m still alive?',
             favorites: [{
                 fullName: 'Christian Bale',
                 id: '@baleBatman',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             }]
 
         },
@@ -94,7 +94,7 @@ var app = angular.module("twitListView", ['ngRoute'])
             createUser: {
                 fullName: 'Christian Bale',
                 id: '@baleBatman',
-                profilePictureUrl: 'http://someUrl/pic.png'
+                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             },
             message: 'We all miss you! An artist lives on !!!',
             favorites: []
