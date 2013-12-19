@@ -103,7 +103,3 @@ var app = angular.module("twitListView", ['ngRoute'])
     };
 })
 
-//TODO: When I make this a component, move to directive controller
-.controller('twitListController', function ($scope, twitListModelService) {
-    $scope.twits = twitListModelService.getAllModelObjects();
-});
