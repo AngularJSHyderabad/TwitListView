@@ -27,14 +27,13 @@ var app = angular.module("twitListView", ['ngRoute'])
             favorites: [{
                 fullName: 'Sachin Tendulkar',
                 id: '@sachinGod',
-                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
+                profilePictureUrl: '/assets/images/sachin.jpg'
             },
             {
                 fullName: 'Christopher Nolan',
                 id: '@nolanBug',
-                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
+                profilePictureUrl: '/assets/images/christopher.jpg'
             }]
-
         },
         {
             id: 'aRandomId2',
@@ -43,15 +42,14 @@ var app = angular.module("twitListView", ['ngRoute'])
             createUser: {
                 fullName: 'Sachin Tendulkar',
                 id: '@sachinGod',
-                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
+                profilePictureUrl: '/assets/images/sachin.jpg'
             },
             message: 'Am I still a God?',
             favorites: [{
                 fullName: 'Rahul Dravid',
                 id: '@wallRahul',
-                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
+                profilePictureUrl: '/assets/images/dravid.jpg'
             }]
-
         },
         {
             id: 'aRandomId3',
@@ -60,15 +58,14 @@ var app = angular.module("twitListView", ['ngRoute'])
             createUser: {
                 fullName: 'Sourav Ganguly',
                 id: '@theDadaSourav',
-                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
+                profilePictureUrl: '/assets/images/sourav.jpg'
             },
             message: 'Yes, everywhere but Kolkatta',
             favorites: [{
                 fullName: 'Yuvraj Singh',
                 id: '@fighterYuvi',
-                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
+                profilePictureUrl: '/assets/images/yuvi.jpg'
             }]
-
         },
         {
             id: 'aRandomId4',
@@ -77,7 +74,7 @@ var app = angular.module("twitListView", ['ngRoute'])
             createUser: {
                 fullName: 'Heath Ledger',
                 id: '@jokerAlive',
-                profilePictureUrl: '/assets/images/ChristianBale.jpeg'
+                profilePictureUrl: '/assets/images/heath.jpg'
             },
             message: 'Has anyone realized I\'m still alive?',
             favorites: [{
@@ -85,7 +82,6 @@ var app = angular.module("twitListView", ['ngRoute'])
                 id: '@baleBatman',
                 profilePictureUrl: '/assets/images/ChristianBale.jpeg'
             }]
-
         },
         {
             id: 'aRandomId5',
@@ -100,7 +96,6 @@ var app = angular.module("twitListView", ['ngRoute'])
             favorites: []
         }
         ];
-
     }
 
     this.getAllModelObjects = function () {

@@ -11,15 +11,19 @@
 	        	<table class="table table-striped small">
 	        		<tr>
 	        			<td>{{twit.createUser.fullName}} - {{twit.createUser.id}}</td>
-	        			
-	        		</tr>
-	        		<tr>
 	        			<td>{{twit.createDate}}</td>
-	        			
 	        		</tr>
 	        		<tr>
 	        			<td>{{twit.message}}</td>
-	        			
+	        			<td></td>
+	        		</tr>
+	        		<tr>
+	        			<td>
+	        				<span ng-if="twit.favorites.length > 0">
+	        					<img style="width=20px; height:20px" src="/assets/images/likes.png"> - <span ng-repeat="fav in twit.favorites"> <img title="{{fav.fullName}}" alt="{{fav.fullName}}" style="width=25px; height:25px" ng-src="{{fav.profilePictureUrl}}" /></span>
+	        				</span>
+	        			</td>	
+	        			<td></td>
 	        		</tr>
 	        	</table>	
 	        </td>
