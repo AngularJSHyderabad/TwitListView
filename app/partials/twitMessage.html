@@ -7,31 +7,12 @@
 	<span class="col-md-6">{{twitMessage.createDate | formatDate:'mmddyyyy'}}</span>
 </div>
 <div class="row">
-	<span class="col-md-6">{{twitMessage.message}}</span>	
+	<span class="col-md-12">{{twitMessage.message}}</span>	
+	<span class="col-md-12">&nbsp;</span>	
+	<span class="col-md-12" ng-if="twitMessage.favorites.length > 0">
+	    <img style="width=20px; height:20px" src="/assets/images/likes.png"> - <span ng-repeat="fav in twitMessage.favorites"> <img title="{{fav.fullName}}" alt="{{fav.fullName}}" style="width=25px; height:25px" ng-src="{{fav.profilePictureUrl}}" /></span>
+	</span>
 </div>
 </div>
-
-	<!--
-	<div class="col-md-9">
-		<table>
-	        <tr>
-	        	<td>{{twitMessage.createUser.fullName}} - {{twitMessage.createUser.id}}</td>
-	        	<td>{{twitMessage.createDate | formatDate:'mmddyyyy'}}</td>
-	        </tr>
-	        <tr>
-	        	<td class="text-primary">{{twitMessage.message}}</td>
-	        	<td></td>
-	        </tr>
-	        <tr>
-	        	<td>
-	        		<span ng-if="twitMessage.favorites.length > 0">
-	        			<img style="width=20px; height:20px" src="/assets/images/likes.png"> - <span ng-repeat="fav in twitMessage.favorites"> <img title="{{fav.fullName}}" alt="{{fav.fullName}}" style="width=25px; height:25px" ng-src="{{fav.profilePictureUrl}}" /></span>
-	        		</span>
-	        	</td>	
-	        	<td></td>
-	        </tr>
-	    </table>	
-	</div>
--->
-	    
+<hr/>
 </div>
