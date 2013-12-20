@@ -3,7 +3,7 @@
 	<p class="col-md-2"> Twits from: <input class="input-sm" type="text" ng-model="twitFilterValue" /> </p>
 	<p class="col-md-2"> &nbsp;</p>
     <table class="table table-hover">
-    	<tbody ng-repeat="twit in twits | filter:{createUser.fullName: twitFilterValue}: true">
+    	<tbody ng-repeat="twit in twits | filter:{createUser.fullName: twitFilterValue}">
     	<tr>
     		
         	<td class="text-center">
@@ -14,7 +14,7 @@
 	        	<table class="table table-striped small">
 	        		<tr class="small">
 	        			<td>{{twit.createUser.fullName}} - {{twit.createUser.id}}</td>
-	        			<td>{{twit.createDate}}</td>
+	        			<td>{{twit.createDate | formatDate:'mmddyyyy'}}</td>
 	        		</tr>
 	        		<tr>
 	        			<td class="text-primary">{{twit.message}}</td>
