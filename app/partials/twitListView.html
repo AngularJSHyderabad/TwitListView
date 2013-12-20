@@ -1,11 +1,13 @@
-<div class="row ">
-	<p class="col-md-8"> &nbsp;</p>
-	<p class="col-md-2"> Twits from: <input class="input-sm" type="text" ng-model="twitFilterValue" /> </p>
-	<p class="col-md-2"> &nbsp;</p>
+<div>
+	<div class="row">
+		<p class="col-md-6"> &nbsp;</p>
+		<p class="col-md-2"> Twits from: <input class="input-sm" type="text" ng-model="twitFilterValue" /> </p>
+		<p class="col-md-2"> &nbsp;</p>
+	</div>
+<!--
     <table class="table table-hover">
     	<tbody ng-repeat="twit in twits | filter:{createUser.fullName: twitFilterValue}">
-    	<tr>
-    		
+    	<tr>    		
         	<td class="text-center">
         		<img style="width:100px; height:100px" ng-src="{{twit.createUser.profilePictureUrl}}" />
         	</td>
@@ -30,7 +32,14 @@
 	        		</tr>
 	        	</table>	
 	        </td>
+	    
         </tr>
     </tbody>
     </table>
+-->
+
+<div class="row" ng-repeat="twit in twits | filter:{createUser.fullName: twitFilterValue}"> 
+	<div twit-message-directive twit-message="twit"></div>
+</div>
+
 </div>
