@@ -1,4 +1,4 @@
-app.service('twitListModelService', function () {
+app.service('twitListModelService', function ($q, $http) {
 
     var getMockTwitListModel = function () {
         return [{
@@ -86,6 +86,17 @@ app.service('twitListModelService', function () {
     }
 
     this.getAllModelObjects = function () {
-        return getMockTwitListModel();
+        //return getMockTwitListModel();
+        var deferred = $q.defer();
+        
+        $http.get('http://localhost:65160/api/values')
+        .success(function(data){
+                deferred.resolve(data);
+            })
+        .error(function(error){
+                deferred.reject(error);
+            });
+
+        return deferred.promise;
     };
 })

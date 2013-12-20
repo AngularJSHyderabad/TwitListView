@@ -1,5 +1,10 @@
-app.controller('loginController', ['$scope','$location', function(scope, location){
-	scope.onGoClick = function(){
-		location.path('/twitList');
+app.controller('loginController', function($scope, $location, $rootScope){
+
+	$scope.twitterHandle = "";
+	$scope.password = "";
+
+	$scope.onGoClick = function(){
+		$rootScope.$broadcast('loginAttempt',{userId: $scope.twitterHandle, password: $scope.password});
+		$location.path('/twitList');
 	};
-}]);
+});

@@ -1,6 +1,6 @@
 var ctrl = app.controller('twitListController', function($scope, twitListModelService){
 
-      $scope.twits =  [{
+   /*   $scope.twits =  [{
             id: 'aRandomId1',
             conversationId: 'aRandomId',
             createDate: new Date(),
@@ -82,5 +82,12 @@ var ctrl = app.controller('twitListController', function($scope, twitListModelSe
             favorites: []
         }];
 
-	//$scope.twits = twitListModelService.getAllModelObjects();
+        */
+
+	twitListModelService.getAllModelObjects().
+    then(function(data){
+        $scope.twits = data;
+    }, function(error){
+        alert("Error calling the service");
+    });
 });
