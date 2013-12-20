@@ -1,0 +1,22 @@
+<div class="row">	
+	<div class="col-md-12 col-md-offset-2">
+	
+	<h3>Twit List View - a sample application</h3>	
+
+	<hr/>
+
+	<div class="col-md-2">Your User Id please?</div>
+    <div class="col-md-10"><input type="text" ng-model="twitterHandle" class="input-sm" /></div>
+    
+	
+	<div class="col-md-2">Password</div>
+    <div class="col-md-2"><input type="password" ng-model="appPassword" class="input-sm" /></div>
+	<div class="col-md-8"><button class="btn btn-primary" ng-click="onGoClick()">Go</button></div>
+
+    <div class="col-md-6" ng-if="twitterHandle.length > 0">
+        <h3 class="text-center"> Welcome {{twitterHandle}}. </h3>
+    </div>
+	
+	<hr/>
+</div>
+</div>

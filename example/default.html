@@ -6,25 +6,16 @@
 
     <script src="../lib/angular.js"></script>
     <script src="../lib/angular-route.js"></script>
-
+    
     <script src="../app/js/app.js"></script>
-    <script src="../app/js/controller.js" ></script>
-    <script src="../app/js/service.js"></script>
+    <script src="../app/js/loginController.js" ></script>
+    <script src="../app/js/twitListController.js" ></script>
+    <script src="../app/js/twitListModelService.js"></script>    
 </head>
 
 
-<body ng-app="twitListView" style="font-family:verdana;">
-	<hr/>
-
-		Your twitter Id please? <input type="text" ng-model="twitterHandle" class="input-sm" />	
-        <button class="btn btn-primary" ng-click="isTwitListVisible=!isTwitListVisible">Go</button>
-        
-        <div ng-if="twitterHandle.length > 0">
-            <H1 class="text-center"> Welcome {{twitterHandle}}. </H1>
-        </div>
-	<hr/>
-	
-	<div ng-show="isTwitListVisible">    	
+<body ng-app="twitListView" style="font-family:verdana!important;">		
+	<div>    	
     	<ng-view></ng-view>
 	</div>
 </body>

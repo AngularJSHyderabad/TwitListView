@@ -1,6 +1,9 @@
 <div class="row ">
+	<p class="col-md-8"> &nbsp;</p>
+	<p class="col-md-2"> Twits from: <input class="input-sm" type="text" ng-model="twitFilterValue" /> </p>
+	<p class="col-md-2"> &nbsp;</p>
     <table class="table table-hover">
-    	<tbody ng-repeat="twit in twits">
+    	<tbody ng-repeat="twit in twits | filter:{createUser.fullName: twitFilterValue}: true">
     	<tr>
     		
         	<td class="text-center">
@@ -9,12 +12,12 @@
 
 	        <td class="text-left">
 	        	<table class="table table-striped small">
-	        		<tr>
+	        		<tr class="small">
 	        			<td>{{twit.createUser.fullName}} - {{twit.createUser.id}}</td>
 	        			<td>{{twit.createDate}}</td>
 	        		</tr>
 	        		<tr>
-	        			<td>{{twit.message}}</td>
+	        			<td class="text-primary">{{twit.message}}</td>
 	        			<td></td>
 	        		</tr>
 	        		<tr>
